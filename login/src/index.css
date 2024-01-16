@@ -1,13 +1,108 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}  
+
+body {
+  background: linear-gradient(to right, #EDC7B7, #AC3B61)
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login, .registration {
+  width: 420px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0;
+}
+
+.wrapper h2 {
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
+}
+
+.input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+  margin-bottom: 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  outline: none;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #D6D6D6;
+  font-size: 15px;
+}
+
+.remember-forgot {
+  display: flex;
+  justify-content: center;
+}
+
+.remember-forgot button {
+  cursor: pointer;
+  color: blue;
+  border: none;
+  background: none;
+  margin-bottom: 10px;
+  padding-top: 3px;
+}
+
+.remember-forgot button:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+.sign-in, .register-div {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-btn, .register-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  color: rgb(104, 85, 224);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(104, 85, 224, 1);
+  width: 200px;
+  padding: 10px 0;
+  border-radius: 10px;
+  transition: 0.4s;
+  margin: 5px 0;
+}
+
+.sign-in-btn:hover, .register-btn:hover {
+  color: white;
+  background-color: rgba(104, 85, 224, 1);
+}
+
+.no-acc, .yes-acc {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.no-acc button, .yes-acc button {
+  margin: 0 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  color: blue;
 }
